@@ -1,3 +1,4 @@
+```
 // =====================================
 // Multilingual Translations
 // =====================================
@@ -101,7 +102,7 @@ const translations = {
         next_step: '下一步 →',
         prev_step: '← 上一步',
         start_over: '重新開始',
-        footer_text: '© 2024 台灣師範大學 - 外國學生居留證申請指南'
+        footer_text: '© 2026 台灣師範大學 - 外國學生居留證申請指南'
     },
     'en': {
         page_title: 'Taiwan Residence Permit Application Guide for International Students',
@@ -202,7 +203,7 @@ const translations = {
         next_step: 'Next Step →',
         prev_step: '← Previous Step',
         start_over: 'Start Over',
-        footer_text: '© 2024 NTNU - International Student Residence Permit Guide'
+        footer_text: '© 2026 NTNU - International Student Residence Permit Guide'
     },
     'ja': {
         page_title: '外国人学生居留証申請ガイド | Residence Permit Application Guide',
@@ -303,7 +304,7 @@ const translations = {
         next_step: '次へ →',
         prev_step: '← 戻る',
         start_over: '最初からやり直す',
-        footer_text: '© 2024 国立台湾師範大学 - 外国人学生居留証申請ガイド'
+        footer_text: '© 2026 国立台湾師範大学 - 外国人学生居留証申請ガイド'
     },
     'ko': {
         page_title: '외국인 학생 거류증 신청 가이드 | Residence Permit Application Guide',
@@ -404,7 +405,7 @@ const translations = {
         next_step: '다음 단계 →',
         prev_step: '← 이전 단계',
         start_over: '처음부터 다시',
-        footer_text: '© 2024 국립대만사범대학 - 외국인 학생 거류증 신청 가이드'
+        footer_text: '© 2026 국립대만사범대학 - 외국인 학생 거류증 신청 가이드'
     },
     'vi': {
         page_title: 'Hướng dẫn xin thẻ cư trú cho sinh viên nước ngoài | Residence Permit Application Guide',
@@ -505,7 +506,7 @@ const translations = {
         next_step: 'Bước tiếp theo →',
         prev_step: '← Bước trước',
         start_over: 'Bắt đầu lại',
-        footer_text: '© 2024 NTNU - Hướng dẫn xin thẻ cư trú cho sinh viên nước ngoài'
+        footer_text: '© 2026 NTNU - Hướng dẫn xin thẻ cư trú cho sinh viên nước ngoài'
     },
     'th': {
         page_title: 'คู่มือสมัครใบถิ่นที่อยู่สำหรับนักเรียนต่างชาติ | Residence Permit Application Guide',
@@ -606,7 +607,7 @@ const translations = {
         next_step: 'ขั้นตอนถัดไป →',
         prev_step: '← ย้อนกลับ',
         start_over: 'เริ่มใหม่',
-        footer_text: '© 2024 NTNU - คู่มือสมัครใบถิ่นที่อยู่สำหรับนักเรียนต่างชาติ'
+        footer_text: '© 2026 NTNU - คู่มือสมัครใบถิ่นที่อยู่สำหรับนักเรียนต่างชาติ'
     },
     'id': {
         page_title: 'Panduan Permohonan Izin Tinggal Mahasiswa Asing | Residence Permit Guide',
@@ -707,7 +708,7 @@ const translations = {
         next_step: 'Langkah Selanjutnya →',
         prev_step: '← Sebelumnya',
         start_over: 'Mulai Ulang',
-        footer_text: '© 2024 NTNU - Panduan Izin Tinggal Mahasiswa Asing'
+        footer_text: '© 2026 NTNU - Panduan Aplikasi Izin Tinggal Mahasiswa Asing'
     },
     'fr': {
         page_title: 'Guide de demande de titre de séjour pour étudiants étrangers | Residence Permit Guide',
@@ -808,7 +809,7 @@ const translations = {
         next_step: 'Suivant →',
         prev_step: '← Précédent',
         start_over: 'Recommencer',
-        footer_text: '© 2024 NTNU - Guide de Titre de Séjour'
+        footer_text: '© 2026 NTNU - Guide de Titre de Séjour'
     },
     'de': {
         page_title: 'Leitfaden zur Beantragung einer Aufenthaltserlaubnis | Residence Permit Guide',
@@ -875,7 +876,7 @@ const translations = {
         reg_step6: 'Registrierung abschließen',
         application_steps: 'Antragsschritte',
         app_step1: 'Im Online-System einloggen',
-        app_step2: '"Antrag auf Ausländeraufenthaltskarte" wählen',
+        app_step2: '選擇「外僑居留證申請」',
         app_step3: 'Persönliche Daten ausfüllen',
         app_step4: 'Dokumente hochladen:',
         upload_enrollment: 'Immatrikulationsbescheinigung',
@@ -909,7 +910,7 @@ const translations = {
         next_step: 'Nächster Schritt →',
         prev_step: '← Zurück',
         start_over: 'Neu starten',
-        footer_text: '© 2024 NTNU - Leitfaden für ausländische Studenten'
+        footer_text: '© 2026 NTNU - Leitfaden für ausländische Studenten'
     },
     'ru': {
         page_title: 'Руководство по получению ВНЖ для студентов | Residence Permit Guide',
@@ -1010,7 +1011,7 @@ const translations = {
         next_step: 'Далее →',
         prev_step: '← Назад',
         start_over: 'Начать заново',
-        footer_text: '© 2024 NTNU - Руководство для иностранных студентов'
+        footer_text: '© 2026 NTNU - Руководство для иностранных студентов'
     }
 };
 
@@ -1105,7 +1106,7 @@ function showStep(step) {
     });
 
     // Show current step content
-    const stepContent = document.querySelector(`.step-content[data-content="${step}"]`);
+    const stepContent = document.querySelector(`.step - content[data - content="${step}"]`);
     if (stepContent) {
         stepContent.classList.add('active');
     }
@@ -1119,7 +1120,7 @@ function showStep(step) {
 function updateProgress() {
     const progressFill = document.getElementById('progressFill');
     const percentage = (currentStep / 4) * 100;
-    progressFill.style.width = `${percentage}%`;
+    progressFill.style.width = `${ percentage }% `;
 }
 
 function updateStepStatus() {
