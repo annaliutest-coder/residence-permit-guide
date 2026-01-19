@@ -1,5 +1,4 @@
-﻿```
-// =====================================
+﻿// =====================================
 // Multilingual Translations
 // =====================================
 const translations = {
@@ -1048,7 +1047,7 @@ function initLanguage() {
     btns.forEach(btn => {
         // Remove old listeners (if any mechanism existed to do so, strictly speaking we can't easily, 
         // but adding new ones is fine as this runs once on DOMContentLoaded)
-        btn.onclick = function() { // Use onclick property to avoid duplicate listeners if run multiple times
+        btn.onclick = function () { // Use onclick property to avoid duplicate listeners if run multiple times
             const lang = this.getAttribute('data-lang');
             if (lang) {
                 switchLanguage(lang);
