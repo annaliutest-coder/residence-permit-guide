@@ -10,41 +10,41 @@
     --success-color: #48bb78;
     --warning-color: #ed8936;
     --danger-color: #f56565;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-success: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    
+
     /* Background */
     --bg-dark: #0f172a;
     --bg-card: rgba(255, 255, 255, 0.05);
     --bg-card-hover: rgba(255, 255, 255, 0.08);
-    
+
     /* Text */
     --text-primary: #ffffff;
     --text-secondary: #cbd5e1;
     --text-muted: #94a3b8;
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
-    
+
     /* Border Radius */
     --radius-sm: 0.5rem;
     --radius-md: 1rem;
     --radius-lg: 1.5rem;
     --radius-xl: 2rem;
-    
+
     /* Shadows */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.2);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
     --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.4);
-    
+
     /* Transitions */
     --transition-fast: 150ms ease;
     --transition-base: 300ms ease;
@@ -63,7 +63,7 @@
 body {
     font-family: 'Noto Sans TC', 'Inter', sans-serif;
     background: var(--bg-dark);
-    background-image: 
+    background-image:
         radial-gradient(at 0% 0%, rgba(102, 126, 234, 0.1) 0px, transparent 50%),
         radial-gradient(at 100% 100%, rgba(118, 75, 162, 0.1) 0px, transparent 50%);
     background-attachment: fixed;
@@ -206,14 +206,18 @@ body {
 .important-reminders ul {
     list-style: none;
     padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
 }
 
 .notice-content li,
 .warning-card li,
 .important-reminders li {
-    padding: var(--spacing-sm) 0;
-    padding-left: 1.5rem;
+    padding: var(--spacing-xs) 0;
+    padding-left: 1.2rem;
     position: relative;
+    width: auto;
 }
 
 .notice-content li::before,
@@ -649,6 +653,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -659,6 +664,7 @@ body {
         opacity: 0;
         transform: translateY(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -670,6 +676,7 @@ body {
         opacity: 0;
         transform: translateX(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -683,7 +690,7 @@ body {
     .container {
         padding-top: calc(var(--spacing-lg) + 120px);
     }
-    
+
     .language-selector {
         top: var(--spacing-sm);
         right: var(--spacing-sm);
@@ -691,28 +698,28 @@ body {
         max-width: none;
         justify-content: center;
     }
-    
+
     .lang-btn {
         font-size: 0.75rem;
         padding: 0.3rem 0.6rem;
     }
-    
+
     .nav-buttons {
         flex-direction: column;
     }
-    
+
     .btn {
         width: 100%;
     }
-    
+
     .progress-steps {
         flex-wrap: wrap;
     }
-    
+
     .step {
         flex: 1 1 45%;
     }
-    
+
     .checklist-grid,
     .info-cards,
     .contact-grid {
@@ -726,11 +733,11 @@ body {
         height: 40px;
         font-size: 1.2rem;
     }
-    
+
     .step-label {
         font-size: 0.75rem;
     }
-    
+
     .notice-card {
         flex-direction: column;
         text-align: center;
