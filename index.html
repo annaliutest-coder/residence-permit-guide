@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">外國學生申請居留證指南 | Residence Permit Application Guide</title>
+    <meta name="description"
+        content="Complete guide for international students applying for Taiwan residence permits with multilingual support">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="zh-TW">
+            <span class="flag">🇹🇼</span>
+            <span class="lang-name">中文</span>
+        </button>
+        <button class="lang-btn" data-lang="en">
+            <span class="flag">🇺🇸</span>
+            <span class="lang-name">English</span>
+        </button>
+        <button class="lang-btn" data-lang="ja">
+            <span class="flag">🇯🇵</span>
+            <span class="lang-name">日本語</span>
+        </button>
+        <button class="lang-btn" data-lang="ko">
+            <span class="flag">🇰🇷</span>
+            <span class="lang-name">한국어</span>
+        </button>
+        <button class="lang-btn" data-lang="vi">
+            <span class="flag">🇻🇳</span>
+            <span class="lang-name">Tiếng Việt</span>
+        </button>
+        <button class="lang-btn" data-lang="th">
+            <span class="flag">🇹🇭</span>
+            <span class="lang-name">ไทย</span>
+        </button>
+        <button class="lang-btn" data-lang="id">
+            <span class="flag">🇮🇩</span>
+            <span class="lang-name">Indonesia</span>
+        </button>
+        <button class="lang-btn" data-lang="fr">
+            <span class="flag">🇫🇷</span>
+            <span class="lang-name">Français</span>
+        </button>
+        <button class="lang-btn" data-lang="de">
+            <span class="flag">🇩🇪</span>
+            <span class="lang-name">Deutsch</span>
+        </button>
+        <button class="lang-btn" data-lang="ru">
+            <span class="flag">🇷🇺</span>
+            <span class="lang-name">Русский</span>
+        </button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 data-i18n="main_title">外國學生申請居留證完整指南</h1>
+            <p class="subtitle" data-i18n="subtitle">跟著影片一步步完成申請</p>
+        </header>
+
+        <!-- Important Notice -->
+        <div class="notice-card">
+            <div class="notice-icon">⚠️</div>
+            <div class="notice-content">
+                <h3 data-i18n="important_notice">重要提醒</h3>
+                <ul>
+                    <li data-i18n="notice_1">第一次辦理可以線上申請</li>
+                    <li data-i18n="notice_2">體檢部分一定要完成體檢才能領取居留證</li>
+                    <li data-i18n="notice_3">居留證逾期將處新臺幣1萬元至5萬元罰鍰</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-steps">
+                <div class="step active" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-label" data-i18n="step1_title">準備文件</div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-label" data-i18n="step2_title">註冊帳號</div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-label" data-i18n="step3_title">填寫申請</div>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-label" data-i18n="step4_title">繳費完成</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step Content -->
+        <div class="steps-content">
+            <!-- Step 1: Document Preparation -->
+            <div class="step-content active" data-content="1">
+                <div class="step-header">
+                    <h2 data-i18n="step1_heading">步驟一：準備必要文件</h2>
+                </div>
+
+                <div class="document-checklist">
+                    <h3 data-i18n="required_docs">必備文件清單</h3>
+                    <div class="checklist-grid">
+                        <div class="checklist-item">
+                            <div class="checkbox">✓</div>
+                            <div class="item-content">
+                                <h4 data-i18n="doc_passport">護照</h4>
+                                <p data-i18n="doc_passport_desc">護照正本及影本</p>
+                            </div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox">✓</div>
+                            <div class="item-content">
+                                <h4 data-i18n="doc_visa">居留簽證</h4>
+                                <p data-i18n="doc_visa_desc">註記「外國留學生」的居留簽證</p>
+                            </div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox">✓</div>
+                            <div class="item-content">
+                                <h4 data-i18n="doc_enrollment">在學證明</h4>
+                                <p data-i18n="doc_enrollment_desc">繳費註冊後可下載或至教務處申請</p>
+                            </div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox">✓</div>
+                            <div class="item-content">
+                                <h4 data-i18n="doc_residence">住宿證明</h4>
+                                <p data-i18n="doc_residence_desc">宿舍住宿證明或租屋契約
+                                    <a href="僑、外籍生列印住宿證明操作手冊How-to-obtain-a-proof-of-accommodation.pdf" target="_blank"
+                                        style="color: #667eea; text-decoration: underline; margin-left: 8px;">📄
+                                        住宿證明操作手冊</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox">✓</div>
+                            <div class="item-content">
+                                <h4 data-i18n="doc_photo">照片</h4>
+                                <p data-i18n="doc_photo_desc">白色背景2吋半身脫帽正面相片</p>
+                            </div>
+                        </div>
+                        <div class="checklist-item">
+                            <div class="checkbox">✓</div>
+                            <div class="item-content">
+                                <h4 data-i18n="doc_fee">費用</h4>
+                                <p data-i18n="doc_fee_desc">新臺幣1,000元（一年期）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h3 data-i18n="enrollment_cert_title">📄 如何取得在學證明</h3>
+                        <div class="info-content">
+                            <p><strong data-i18n="method1">方法一：使用 NTNU APP 下載（推薦）</strong></p>
+                            <img src="ntnu_app_guide.png" alt="NTNU APP 使用說明"
+                                style="width: 100%; max-width: 800px; border-radius: 8px; margin: 12px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <ol>
+                                <li data-i18n="enrollment_app_step1">下載並登入「NTNU APP」（國立臺灣師範大學APP）</li>
+                                <li data-i18n="enrollment_app_step2">進入「我的校園」→「學生專區」</li>
+                                <li data-i18n="enrollment_app_step3">選擇「教務資訊」→「在學證明」</li>
+                                <li data-i18n="enrollment_app_step4">選擇當學期並點擊「下載PDF」</li>
+                            </ol>
+                            <p class="note" data-i18n="app_note">💡 APP下載的在學證明已內建教務處電子章戳，無需另外用印！</p>
+                            <a href="https://www.itc.ntnu.edu.tw/index.php/iportal_app/" target="_blank"
+                                class="link-button">下載 NTNU APP →</a>
+                        </div>
+                        <div class="info-content">
+                            <p><strong data-i18n="method2">方法二：i-Portal 網頁下載</strong></p>
+                            <div style="display: flex; gap: 12px; margin: 12px 0; flex-wrap: wrap;">
+                                <img src="iportal_login.png" alt="i-Portal 登入頁面"
+                                    style="width: 48%; min-width: 300px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <img src="iportal_navigation.png" alt="i-Portal 導航說明"
+                                    style="width: 48%; min-width: 300px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            </div>
+                            <ol>
+                                <li data-i18n="enrollment_step1">登入校務行政資訊入口網</li>
+                                <li data-i18n="enrollment_step2">進入「教務資訊系統」→「學籍相關」</li>
+                                <li data-i18n="enrollment_step3">選擇「當學期在學證明」並下載</li>
+                            </ol>
+                            <a href="https://iportal.ntnu.edu.tw/ntnu/" target="_blank" class="link-button"
+                                data-i18n="go_to_portal">前往校務系統 →</a>
+                            <a href="https://iportal2.ntnu.edu.tw/ntnu/files/%E8%87%BA%E5%B8%AB%E5%A4%A7%E6%96%B0%E7%89%88iportal%E6%A0%A1%E5%8B%99%E5%85%A5%E5%8F%A3%E7%B6%B2_%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E_V2_20250617.pdf"
+                                target="_blank" class="link-button" style="margin-left: 8px;">📄 i-Portal 使用說明 →</a>
+                        </div>
+                        <div class="info-content">
+                            <p><strong data-i18n="method3">方法三：至教務處申請</strong></p>
+                            <ol>
+                                <li data-i18n="enrollment_step4">確認已繳完學費</li>
+                                <li data-i18n="enrollment_step5">帶著繳費收據到教務處註冊組申請（費用：NT$10/份）</li>
+                            </ol>
+                        </div>
+                        <div class="info-content"
+                            style="background: #fff3cd; padding: 12px; border-radius: 8px; margin-top: 12px;">
+                            <p style="margin: 0; font-size: 0.9em; color: #333;" data-i18n="enrollment_important_note">
+                                ⚠️
+                                <strong>重要提醒：</strong>剛繳完學費的同學，系統可能需要2-3個工作天更新狀態，才能下載在學證明。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 data-i18n="residence_cert_title">🏠 如何取得住宿證明</h3>
+                        <div class="info-content">
+                            <p><strong data-i18n="dorm_student">住學校宿舍：</strong></p>
+                            <ol>
+                                <li data-i18n="residence_step1">確認已繳交住宿費用</li>
+                                <li data-i18n="residence_step2">登入校務行政資訊入口網</li>
+                                <li data-i18n="residence_step3">進入「學生宿舍相關系統」下載住宿證明</li>
+                            </ol>
+                        </div>
+                        <div class="info-content">
+                            <p><strong data-i18n="off_campus">住校外：</strong></p>
+                            <p data-i18n="rental_contract">請提供與房東簽訂的租賃契約（租屋契約）</p>
+                        </div>
+                        <a href="僑、外籍生列印住宿證明操作手冊How-to-obtain-a-proof-of-accommodation.pdf" target="_blank"
+                            class="link-button" style="margin-top: 12px;">📄 住宿證明操作手冊 →</a>
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-primary" onclick="nextStep()" data-i18n="next_step">下一步 →</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Register Account -->
+            <div class="step-content" data-content="2">
+                <div class="step-header">
+                    <h2 data-i18n="step2_heading">步驟二：註冊移民署帳號</h2>
+                </div>
+
+                <div class="video-container">
+                    <video controls controlsList="nodownload">
+                        <source src="申請居留證.mp4" type="video/mp4">
+                        <p data-i18n="video_not_supported">您的瀏覽器不支援影片播放</p>
+                    </video>
+                    <p class="video-caption" data-i18n="video1_caption">觀看影片學習如何註冊移民署線上申辦系統帳號</p>
+                </div>
+
+                <div class="instruction-card">
+                    <h3 data-i18n="registration_steps">註冊步驟說明</h3>
+                    <ol class="instruction-list">
+                        <li data-i18n="reg_step1">前往移民署線上申辦網站：<a href="https://reurl.cc/GEbr2p"
+                                target="_blank">https://reurl.cc/GEbr2p</a></li>
+                        <li data-i18n="reg_step2">點選「註冊新帳號」</li>
+                        <li data-i18n="reg_step3">填寫個人基本資料（護照資訊、聯絡方式等）</li>
+                        <li data-i18n="reg_step4">設定帳號密碼</li>
+                        <li data-i18n="reg_step5">驗證電子郵件</li>
+                        <li data-i18n="reg_step6">完成註冊</li>
+                    </ol>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="prevStep()" data-i18n="prev_step">← 上一步</button>
+                    <button class="btn btn-primary" onclick="nextStep()" data-i18n="next_step">下一步 →</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Fill Application -->
+            <div class="step-content" data-content="3">
+                <div class="step-header">
+                    <h2 data-i18n="step3_heading">步驟三：填寫線上申請表</h2>
+                </div>
+
+                <div class="video-container">
+                    <video controls controlsList="nodownload">
+                        <source src="申請居留證2.mp4" type="video/mp4">
+                        <p data-i18n="video_not_supported">您的瀏覽器不支援影片播放</p>
+                    </video>
+                    <p class="video-caption" data-i18n="video2_caption">跟著影片一步步完成居留證申請表填寫</p>
+                </div>
+
+                <div class="instruction-card">
+                    <h3 data-i18n="application_steps">申請步驟說明</h3>
+                    <ol class="instruction-list">
+                        <li data-i18n="app_step1">登入移民署線上申辦系統</li>
+                        <li data-i18n="app_step2">選擇「外僑居留證申請」</li>
+                        <li data-i18n="app_step3">填寫個人基本資料</li>
+                        <li data-i18n="app_step4">上傳必要文件：
+                            <ul>
+                                <li data-i18n="upload_enrollment">在學證明</li>
+                                <li data-i18n="upload_residence">住宿證明</li>
+                                <li data-i18n="upload_photo">2吋照片電子檔</li>
+                            </ul>
+                        </li>
+                        <li data-i18n="app_step5">確認資料無誤</li>
+                        <li data-i18n="app_step6">送出申請</li>
+                    </ol>
+                </div>
+
+                <div class="warning-card">
+                    <h3 data-i18n="permit_duration">⏰ 居留證效期說明</h3>
+                    <ul>
+                        <li data-i18n="duration_note3"><strong>效期選擇：</strong>可選擇1年（NT$1,000）、2年（NT$2,000）或3年（NT$3,000）效期
+                        </li>
+                        <li data-i18n="duration_note4"><strong>延期申請：</strong>居留證到期前3個月內應申請延展</li>
+                    </ul>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="prevStep()" data-i18n="prev_step">← 上一步</button>
+                    <button class="btn btn-primary" onclick="nextStep()" data-i18n="next_step">下一步 →</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Payment -->
+            <div class="step-content" data-content="4">
+                <div class="step-header">
+                    <h2 data-i18n="step4_heading">步驟四：繳費與領證</h2>
+                </div>
+
+                <div class="video-container">
+                    <video controls controlsList="nodownload">
+                        <source src="申請居留證3.mp4" type="video/mp4">
+                        <p data-i18n="video_not_supported">您的瀏覽器不支援影片播放</p>
+                    </video>
+                    <p class="video-caption" data-i18n="video3_caption">了解如何完成繳費並領取居留證</p>
+                </div>
+
+                <div class="instruction-card">
+                    <h3 data-i18n="payment_steps">繳費步驟說明</h3>
+                    <ol class="instruction-list">
+                        <li data-i18n="pay_step1">線上申請完成後，系統會產生繳費單</li>
+                        <li data-i18n="pay_step2">列印繳費單或記下繳費代碼</li>
+                        <li data-i18n="pay_step3">前往便利商店、郵局或銀行繳費（NT$1,000）</li>
+                        <li data-i18n="pay_step4">保留繳費收據</li>
+                        <li data-i18n="pay_step5">等待審核通知（約7-14個工作天）</li>
+                        <li data-i18n="pay_step6">收到通知後，攜帶護照和收據前往移民署領證</li>
+                    </ol>
+                </div>
+
+                <div class="success-card">
+                    <div class="success-icon">🎉</div>
+                    <h3 data-i18n="congratulations">恭喜！</h3>
+                    <p data-i18n="completion_message">完成以上步驟後，您就成功申請了台灣居留證！</p>
+                </div>
+
+                <div class="important-reminders">
+                    <h3 data-i18n="important_reminders">📌 重要事項提醒</h3>
+                    <ul>
+                        <li data-i18n="reminder1">居留證到期前3個月內應申請延展</li>
+                        <li data-i18n="reminder2">變更居住地址須於30日內辦理變更登記（未辦理將處罰鍰NT$2,000-10,000）</li>
+                        <li data-i18n="reminder3">居留證逾期將處新臺幣1萬元至5萬元罰鍰（依逾期天數遞增）</li>
+                        <li data-i18n="reminder4">請妥善保管居留證，遺失需立即申報</li>
+                    </ul>
+                </div>
+
+                <div class="contact-info">
+                    <h3 data-i18n="need_help">需要協助？</h3>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <h4 data-i18n="immigration_office">內政部移民署</h4>
+                            <p data-i18n="immigration_website">網站：<a href="https://reurl.cc/GEbr2p"
+                                    target="_blank">線上申辦系統</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h4 data-i18n="school_office">學校國際處</h4>
+                            <p data-i18n="school_location">位置：和平校區 普通大樓1樓</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="prevStep()" data-i18n="prev_step">← 上一步</button>
+                    <button class="btn btn-success" onclick="resetGuide()" data-i18n="start_over">重新開始</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-i18n="footer_text">© 2024 台灣師範大學 - 外國學生居留證申請指南</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
