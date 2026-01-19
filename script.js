@@ -7,7 +7,7 @@ const translations = {
         main_title: '外國學生申請居留證完整指南',
         subtitle: '跟著影片一步步完成申請',
         important_notice: '重要提醒',
-        notice_1: '第一次辦理可以線上申請',
+        notice_1: '可以線上申請',
         notice_2: '體檢部分一定要完成體檢才能領取居留證',
         notice_3: '居留證逾期將處新臺幣1萬元至5萬元罰鍰',
         step1_title: '準備文件',
