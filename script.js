@@ -1032,13 +1032,28 @@ document.addEventListener('DOMContentLoaded', () => {
 // =====================================
 function initLanguage() {
     const savedLang = localStorage.getItem('selectedLanguage') || 'zh-TW';
-    switchLanguage(savedLang);
+    // Ensure translations exist before switching
+    if (typeof translations !== 'undefined' && translations[savedLang]) {
+        switchLanguage(savedLang);
+    } else {
+        switchLanguage('zh-TW');
+    }
 
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const lang = btn.dataset.lang;
-            switchLanguage(lang);
-        });
+    const btns = document.querySelectorAll('.lang-btn');
+    if (btns.length === 0) {
+        console.warn('No language buttons found');
+        return;
+    }
+
+    btns.forEach(btn => {
+        // Remove old listeners (if any mechanism existed to do so, strictly speaking we can't easily, 
+        // but adding new ones is fine as this runs once on DOMContentLoaded)
+        btn.onclick = function() { // Use onclick property to avoid duplicate listeners if run multiple times
+            const lang = this.getAttribute('data-lang');
+            if (lang) {
+                switchLanguage(lang);
+            }
+        };
     });
 }
 

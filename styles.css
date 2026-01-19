@@ -78,18 +78,37 @@ body {
    ===================================== */
 .language-selector {
     position: fixed;
-    top: var(--spacing-md);
-    right: var(--spacing-md);
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
     gap: var(--spacing-xs);
-    background: var(--bg-card);
+    background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(10px);
     padding: var(--spacing-sm);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
-    z-index: 1000;
-    max-width: 500px;
+    border-radius: 0;
+    box-shadow: var(--shadow-md);
+    z-index: 2000;
+    max-width: none;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scroll on iOS */
+}
+
+/* Hide scrollbar for clean look but allow scrolling */
+.language-selector::-webkit-scrollbar {
+    height: 4px;
+}
+
+.language-selector::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.language-selector::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 2px;
 }
 
 .lang-btn {
@@ -135,7 +154,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--spacing-xl) var(--spacing-md);
-    padding-top: calc(var(--spacing-xl) + 80px);
+    padding-top: 140px;
+    /* Increased to clear fixed header */
 }
 
 /* =====================================
@@ -692,11 +712,9 @@ body {
     }
 
     .language-selector {
-        top: var(--spacing-sm);
-        right: var(--spacing-sm);
-        left: var(--spacing-sm);
-        max-width: none;
-        justify-content: center;
+        justify-content: flex-start;
+        /* Align start on mobile for scrolling */
+        padding: var(--spacing-xs);
     }
 
     .lang-btn {
