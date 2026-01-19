@@ -243,10 +243,10 @@ body {
 .notice-content li::before,
 .warning-card li::before,
 .important-reminders li::before {
-    content: "→";
+    content: "✓";
     position: absolute;
     left: 0;
-    color: var(--primary-color);
+    color: var(--success-color);
     font-weight: bold;
 }
 
