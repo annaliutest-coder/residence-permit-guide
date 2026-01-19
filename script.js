@@ -1,4 +1,4 @@
-```
+﻿```
 // =====================================
 // Multilingual Translations
 // =====================================
@@ -1121,7 +1121,7 @@ function showStep(step) {
     });
 
     // Show current step content
-    const stepContent = document.querySelector(`.step - content[data - content="${step}"]`);
+    const stepContent = document.querySelector(`.step-content[data-content="${step}"]`);
     if (stepContent) {
         stepContent.classList.add('active');
     }
@@ -1135,7 +1135,7 @@ function showStep(step) {
 function updateProgress() {
     const progressFill = document.getElementById('progressFill');
     const percentage = (currentStep / 4) * 100;
-    progressFill.style.width = `${ percentage }% `;
+    progressFill.style.width = `${percentage}%`;
 }
 
 function updateStepStatus() {
